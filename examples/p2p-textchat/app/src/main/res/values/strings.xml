@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Sample-P2P-TextChat</string>
+    <string name="title_activity_text_chat">TextChat</string>
+</resources>

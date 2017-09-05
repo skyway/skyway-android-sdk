@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="datatypes">
+        <item>"Hello WebRTC. (String)</item>
+        <item>"3.14 (Double)"</item>
+        <item>"[1,2,3](Array)"</item>
+        <item>"{'one':1,'two':2} (Map)"</item>
+        <item>"send Image (Binary)"</item>
+    </string-array>
+</resources>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Sample-sfu-videochat</string>
+    <string name="title_activity_video_chat">SfuVideoChat</string>
+</resources>

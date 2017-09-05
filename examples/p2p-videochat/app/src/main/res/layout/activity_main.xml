@@ -1,0 +1,81 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#0099cc"
+	tools:context="com.ntt.ecl.webrtc.sample_p2p_videochat.MainActivity">
+
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:id="@+id/tvOwnId"
+		app:layout_constraintRight_toLeftOf="@+id/btnAction"
+		android:layout_marginEnd="16dp"
+		android:layout_marginRight="16dp"
+		android:text="textview"
+		android:layout_marginStart="16dp"
+		app:layout_constraintLeft_toLeftOf="parent"
+		android:layout_marginLeft="16dp"
+		android:layout_marginTop="16dp"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintBottom_toTopOf="@+id/svRemoteView"
+		android:layout_marginBottom="8dp"
+		android:textColor="@android:color/white"
+		android:textSize="18sp" />
+
+	<Button
+		android:text="Make Call"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="16dp"
+		app:layout_constraintRight_toRightOf="parent"
+		android:layout_marginRight="16dp"
+		android:layout_marginTop="16dp"
+		app:layout_constraintTop_toTopOf="parent"
+		android:id="@+id/btnAction" />
+
+	<view
+		android:layout_width="320dp"
+		android:layout_height="320dp"
+		class="io.skyway.Peer.Browser.Canvas"
+		android:layout_marginEnd="16dp"
+		app:layout_constraintRight_toRightOf="parent"
+		android:layout_marginRight="16dp"
+		android:layout_marginStart="16dp"
+		app:layout_constraintLeft_toLeftOf="parent"
+		android:layout_marginLeft="16dp"
+		android:id="@+id/svRemoteView"
+		android:layout_marginTop="8dp"
+		app:layout_constraintTop_toBottomOf="@+id/btnAction" />
+
+	<view
+		android:layout_width="140dp"
+		android:layout_height="140dp"
+		class="io.skyway.Peer.Browser.Canvas"
+		android:id="@+id/svLocalView"
+		android:layout_marginEnd="8dp"
+		app:layout_constraintRight_toRightOf="parent"
+		android:layout_marginRight="8dp"
+		app:layout_constraintTop_toBottomOf="@+id/svRemoteView"
+		app:layout_constraintBottom_toBottomOf="parent"
+		android:layout_marginBottom="16dp" />
+
+	<Button
+		android:text="Switch Camera"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/switchCameraAction"
+		app:layout_constraintRight_toLeftOf="@+id/svLocalView"
+		android:layout_marginEnd="8dp"
+		android:layout_marginRight="8dp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		android:layout_marginBottom="16dp"
+		android:layout_marginTop="8dp"
+		app:layout_constraintTop_toBottomOf="@+id/svRemoteView"
+		android:layout_marginStart="16dp"
+		app:layout_constraintLeft_toLeftOf="parent"
+		android:layout_marginLeft="16dp" />
+
+</android.support.constraint.ConstraintLayout>

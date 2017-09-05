@@ -1,0 +1,103 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#0099cc"
+    android:keepScreenOn="true"
+	tools:context="com.ntt.ecl.webrtc.sample_mesh_textchat.MainActivity">
+
+
+	<TextView
+			android:text="ID: "
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/tvIdLabel"
+		android:textColor="@android:color/white"
+		android:layout_marginTop="16dp"
+		app:layout_constraintTop_toTopOf="parent"
+		android:layout_marginStart="16dp"
+		app:layout_constraintLeft_toLeftOf="parent"
+		android:layout_marginLeft="16dp" />
+
+	<TextView
+		android:text="---"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/tvOwnId"
+		android:layout_marginTop="16dp"
+		app:layout_constraintTop_toTopOf="parent"
+		android:layout_marginStart="8dp"
+		app:layout_constraintLeft_toRightOf="@+id/tvIdLabel"
+		android:layout_marginLeft="8dp"
+		android:layout_marginEnd="16dp"
+		app:layout_constraintRight_toRightOf="parent"
+		android:layout_marginRight="16dp"
+		android:textColor="@android:color/white" />
+
+	<Button
+		android:text="Join Room"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="16dp"
+		app:layout_constraintRight_toRightOf="parent"
+		android:layout_marginRight="16dp"
+		android:id="@+id/btnAction"
+		android:layout_marginTop="8dp"
+		app:layout_constraintTop_toBottomOf="@+id/tvOwnId" />
+
+	<EditText
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:ems="10"
+		android:id="@+id/txRoomName"
+		android:layout_marginLeft="16dp" app:layout_constraintLeft_toLeftOf="parent"
+		android:inputType="text" android:layout_marginStart="16dp"
+		android:hint="Room name"
+		android:layout_marginTop="8dp"
+		app:layout_constraintTop_toBottomOf="@+id/tvOwnId"
+		app:layout_constraintRight_toLeftOf="@+id/btnAction"
+		android:layout_marginEnd="8dp"
+		android:layout_marginRight="8dp" />
+
+	<Button
+		android:text="Send"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="16dp"
+		app:layout_constraintRight_toRightOf="parent"
+		android:layout_marginRight="16dp"
+		android:id="@+id/btnSend"
+		android:layout_marginTop="8dp"
+		app:layout_constraintTop_toBottomOf="@+id/btnAction" />
+
+	<EditText
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:ems="10"
+		android:id="@+id/txMessage"
+		android:layout_marginLeft="16dp" app:layout_constraintLeft_toLeftOf="parent"
+		android:inputType="text" android:layout_marginStart="16dp"
+		android:hint="Message"
+		android:layout_marginTop="8dp"
+		app:layout_constraintTop_toBottomOf="@+id/txRoomName"
+		app:layout_constraintRight_toLeftOf="@+id/btnSend"
+		android:layout_marginEnd="8dp"
+		android:layout_marginRight="8dp" />
+
+	<ListView
+		android:layout_marginTop="8dp"
+		app:layout_constraintTop_toBottomOf="@+id/txMessage"
+		android:layout_marginEnd="16dp"
+		app:layout_constraintRight_toRightOf="parent"
+		android:layout_marginRight="16dp"
+		android:layout_marginStart="16dp"
+		app:layout_constraintLeft_toLeftOf="parent"
+		android:layout_marginLeft="16dp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		android:layout_marginBottom="16dp"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:id="@+id/listView" />
+
+</android.support.constraint.ConstraintLayout>

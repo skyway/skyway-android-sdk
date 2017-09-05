@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Sample-mesh-textchat</string>
+    <string name="title_activity_text_chat">MeshTextChat</string>
+</resources>
