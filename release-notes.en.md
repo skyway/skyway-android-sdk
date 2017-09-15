@@ -5,7 +5,12 @@ SkyWay Android SDK release notes
 
 ###　New features
 --------------------------
+**Version 1.0.1**
 
-Version 1.0.0
+* Fixed bug that metadata on Media/DataConnection class was not set.
+
+--------------------------
+
+**Version 1.0.0**
 
 * first release
