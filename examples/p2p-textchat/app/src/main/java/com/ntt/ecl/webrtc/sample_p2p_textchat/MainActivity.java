@@ -35,6 +35,7 @@ import io.skyway.Peer.OnCallback;
 import io.skyway.Peer.Peer;
 import io.skyway.Peer.PeerError;
 import io.skyway.Peer.PeerOption;
+import io.skyway.Peer.ConnectOption;
 
 
 /**
