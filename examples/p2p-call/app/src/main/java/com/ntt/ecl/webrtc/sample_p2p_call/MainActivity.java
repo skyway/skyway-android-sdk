@@ -59,7 +59,12 @@ public class MainActivity extends Activity {
 	private DataConnection 	_signalingChannel;
 
 	private String			_strOwnId;
-	private boolean			_bConnected;
+	public enum	CallState {
+		TERMINATED,
+		CALLING,
+		ESTABLISHED
+	}
+	private CallState		_callState;
 
 	private Handler			_handler;
 
@@ -73,6 +78,7 @@ public class MainActivity extends Activity {
 
 		_handler = new Handler(Looper.getMainLooper());
 		final Activity activity = this;
+		_callState = CallState.TERMINATED;
 
 		//
 		// Initialize Peer
@@ -120,6 +126,7 @@ public class MainActivity extends Activity {
 				}
 
 				_mediaConnection = (MediaConnection) object;
+				_callState = CallState.CALLING;
 				showIncomingCallDialog();
 
 			}
@@ -134,6 +141,7 @@ public class MainActivity extends Activity {
 				}
 
 				_signalingChannel = (DataConnection) object;
+				setSignalingCallbacks();
 
 			}
 		});
@@ -170,16 +178,26 @@ public class MainActivity extends Activity {
 			public void onClick(View v)	{
 				v.setEnabled(false);
 
-				if (!_bConnected) {
+				if (CallState.TERMINATED == _callState) {
 
 					// Select remote peer & make a call
 					showPeerIDs();
+				}
+				else if (CallState.CALLING == _callState) {
+
+					// Cancel a call
+					if(null != _signalingChannel) {
+						_signalingChannel.send("cancel");
+					}
+					_callState = CallState.TERMINATED;
+
 				}
 				else {
 
 					// Hang up a call
 					closeRemoteStream();
 					_mediaConnection.close();
+					_callState = CallState.TERMINATED;
 
 				}
 
@@ -284,6 +302,8 @@ public class MainActivity extends Activity {
 				_remoteStream = (MediaStream) object;
 				Canvas canvas = (Canvas) findViewById(R.id.svRemoteView);
 				_remoteStream.addVideoRenderer(canvas,0);
+				_callState = CallState.ESTABLISHED;
+				updateActionButtonTitle();
 			}
 		});
 
@@ -291,7 +311,7 @@ public class MainActivity extends Activity {
 			@Override
 			public void onCallback(Object object) {
 				closeRemoteStream();
-				_bConnected = false;
+				_callState = CallState.TERMINATED;
 				updateActionButtonTitle();
 			}
 		});
@@ -341,8 +361,14 @@ public class MainActivity extends Activity {
 				switch(message) {
 					case "reject":
 						closeMediaConnection();
-						_bConnected = false;
+						_callState = CallState.TERMINATED;
 						updateActionButtonTitle();
+						break;
+					case "cancel":
+						closeMediaConnection();
+						_callState = CallState.TERMINATED;
+						updateActionButtonTitle();
+						dismissIncomingCallDialog();
 						break;
 				}
 			}
@@ -450,7 +476,7 @@ public class MainActivity extends Activity {
 		_mediaConnection = _peer.call(strPeerId, _localStream, option);
 		if (null != _mediaConnection) {
 			setMediaCallbacks();
-			_bConnected = true;
+			_callState = CallState.CALLING;
 		}
 
 		// custom P2P signaling channel to reject call attempt
@@ -532,9 +558,13 @@ public class MainActivity extends Activity {
 			public void run() {
 				Button btnAction = (Button) findViewById(R.id.btnAction);
 				if (null != btnAction) {
-					if (false == _bConnected) {
+					if (CallState.TERMINATED == _callState) {
 						btnAction.setText("Make Call");
-					} else {
+					}
+					else if (CallState.CALLING == _callState) {
+						btnAction.setText("Calling");
+					}
+					else {
 						btnAction.setText("Hang up");
 					}
 				}
@@ -545,8 +575,9 @@ public class MainActivity extends Activity {
 	//
 	// Show alert dialog on an incoming call
 	//
+	AlertDialog incomingCallDialog;
 	void showIncomingCallDialog(){
-		new AlertDialog.Builder(this)
+		incomingCallDialog = new AlertDialog.Builder(this)
 				.setTitle("Incoming call")
 				.setMessage("from : " + _mediaConnection.peer())
 				.setPositiveButton("Answer", new DialogInterface.OnClickListener() {
@@ -554,7 +585,7 @@ public class MainActivity extends Activity {
 					public void onClick(DialogInterface dialogInterface, int i) {
 						_mediaConnection.answer(_localStream);
 						setMediaCallbacks();
-						_bConnected = true;
+						_callState = CallState.ESTABLISHED;
 						updateActionButtonTitle();
 					}
 				})
@@ -563,10 +594,20 @@ public class MainActivity extends Activity {
 					public void onClick(DialogInterface dialogInterface, int i) {
 						if(null != _signalingChannel){
 							_signalingChannel.send("reject");
+							_callState = CallState.TERMINATED;
 						}
 					}
 				})
 				.show();
 	}
 
+	//
+	// Dismiss alert dialog for an incoming call
+	//
+	void dismissIncomingCallDialog(){
+		if( null != incomingCallDialog ) {
+			incomingCallDialog.cancel();
+			incomingCallDialog = null;
+		}
+	}
 }
