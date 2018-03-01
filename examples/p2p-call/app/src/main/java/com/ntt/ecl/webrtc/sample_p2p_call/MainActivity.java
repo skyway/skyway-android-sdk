@@ -30,6 +30,7 @@ import io.skyway.Peer.Browser.MediaConstraints;
 import io.skyway.Peer.Browser.MediaStream;
 import io.skyway.Peer.Browser.Navigator;
 import io.skyway.Peer.CallOption;
+import io.skyway.Peer.DataConnection;
 import io.skyway.Peer.MediaConnection;
 import io.skyway.Peer.OnCallback;
 import io.skyway.Peer.Peer;
@@ -55,6 +56,7 @@ public class MainActivity extends Activity {
 	private MediaStream		_localStream;
 	private MediaStream		_remoteStream;
 	private MediaConnection	_mediaConnection;
+	private DataConnection 	_signalingChannel;
 
 	private String			_strOwnId;
 	private boolean			_bConnected;
@@ -119,6 +121,19 @@ public class MainActivity extends Activity {
 
 				_mediaConnection = (MediaConnection) object;
 				showIncomingCallDialog();
+
+			}
+		});
+
+		// CONNECT (Custom Signaling Channel for a call)
+		_peer.on(Peer.PeerEventEnum.CONNECTION, new OnCallback() {
+			@Override
+			public void onCallback(Object object) {
+				if (!(object instanceof  DataConnection)) {
+					return;
+				}
+
+				_signalingChannel = (DataConnection) object;
 
 			}
 		});
@@ -292,6 +307,50 @@ public class MainActivity extends Activity {
 	}
 
 	//
+	// Set callbacks for DataConnection.DataEvents
+	//
+	void setSignalingCallbacks() {
+		_signalingChannel.on(DataConnection.DataEventEnum.OPEN, new OnCallback() {
+			@Override
+			public void onCallback(Object object) {
+
+			}
+		});
+
+		_signalingChannel.on(DataConnection.DataEventEnum.CLOSE, new OnCallback() {
+			@Override
+			public void onCallback(Object object) {
+
+			}
+		});
+
+		_signalingChannel.on(DataConnection.DataEventEnum.ERROR, new OnCallback() {
+			@Override
+			public void onCallback(Object object) {
+				PeerError error = (PeerError) object;
+				Log.d(TAG, "[On/DataError]" + error);
+			}
+		});
+
+		_signalingChannel.on(DataConnection.DataEventEnum.DATA, new OnCallback() {
+			@Override
+			public void onCallback(Object object) {
+				String message = (String) object;
+				Log.d(TAG, "[On/Data]" + message);
+
+				switch(message) {
+					case "reject":
+						closeMediaConnection();
+						_bConnected = false;
+						updateActionButtonTitle();
+						break;
+				}
+			}
+		});
+
+	}
+
+	//
 	// Clean up objects
 	//
 	private void destroyPeer() {
@@ -303,12 +362,7 @@ public class MainActivity extends Activity {
 			_localStream.close();
 		}
 
-		if (null != _mediaConnection)	{
-			if (_mediaConnection.isOpen()) {
-				_mediaConnection.close();
-			}
-			unsetMediaCallbacks();
-		}
+		closeMediaConnection();
 
 		Navigator.terminate();
 
@@ -356,6 +410,18 @@ public class MainActivity extends Activity {
 	}
 
 	//
+	// Close a MediaConnection
+	//
+	void closeMediaConnection() {
+		if (null != _mediaConnection)	{
+			if (_mediaConnection.isOpen()) {
+				_mediaConnection.close();
+			}
+			unsetMediaCallbacks();
+		}
+	}
+
+	//
 	// Close a remote MediaStream
 	//
 	void closeRemoteStream(){
@@ -382,10 +448,15 @@ public class MainActivity extends Activity {
 
 		CallOption option = new CallOption();
 		_mediaConnection = _peer.call(strPeerId, _localStream, option);
-
 		if (null != _mediaConnection) {
 			setMediaCallbacks();
 			_bConnected = true;
+		}
+
+		// custom P2P signaling channel to reject call attempt
+		_signalingChannel = _peer.connect(strPeerId);
+		if (null != _signalingChannel) {
+			setSignalingCallbacks();
 		}
 
 		updateActionButtonTitle();
@@ -490,7 +561,9 @@ public class MainActivity extends Activity {
 				.setNegativeButton("Reject", new DialogInterface.OnClickListener() {
 					@Override
 					public void onClick(DialogInterface dialogInterface, int i) {
-						// TDB: will be filled in next commit
+						if(null != _signalingChannel){
+							_signalingChannel.send("reject");
+						}
 					}
 				})
 				.show();
