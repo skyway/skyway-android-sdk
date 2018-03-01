@@ -40,7 +40,11 @@ import io.skyway.Peer.PeerOption;
 /**
  *
  * MainActivity.java
- * ECL WebRTC p2p video-chat sample
+ * ECL WebRTC p2p call sample
+ *
+ * In this sample, a callee will be prompted by an alert-dialog to select
+ * either "answer" or "reject" an incoming call (unlike p2p-videochat sample,
+ * in which a callee will answer the call automatically).
  *
  */
 public class MainActivity extends Activity {
