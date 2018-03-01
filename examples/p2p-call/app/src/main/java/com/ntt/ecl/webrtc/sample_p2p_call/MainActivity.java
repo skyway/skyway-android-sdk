@@ -2,8 +2,10 @@ package com.ntt.ecl.webrtc.sample_p2p_call;
 
 import android.Manifest;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.FragmentManager;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.pm.PackageManager;
 import android.media.AudioManager;
 import android.os.Bundle;
@@ -116,11 +118,8 @@ public class MainActivity extends Activity {
 				}
 
 				_mediaConnection = (MediaConnection) object;
-				setMediaCallbacks();
-				_mediaConnection.answer(_localStream);
+				showIncomingCallDialog();
 
-				_bConnected = true;
-				updateActionButtonTitle();
 			}
 		});
 
@@ -470,6 +469,31 @@ public class MainActivity extends Activity {
 				}
 			}
 		});
+	}
+
+	//
+	// Show alert dialog on an incoming call
+	//
+	void showIncomingCallDialog(){
+		new AlertDialog.Builder(this)
+				.setTitle("Incoming call")
+				.setMessage("from : " + _mediaConnection.peer())
+				.setPositiveButton("Answer", new DialogInterface.OnClickListener() {
+					@Override
+					public void onClick(DialogInterface dialogInterface, int i) {
+						_mediaConnection.answer(_localStream);
+						setMediaCallbacks();
+						_bConnected = true;
+						updateActionButtonTitle();
+					}
+				})
+				.setNegativeButton("Reject", new DialogInterface.OnClickListener() {
+					@Override
+					public void onClick(DialogInterface dialogInterface, int i) {
+						// TDB: will be filled in next commit
+					}
+				})
+				.show();
 	}
 
 }
