@@ -194,6 +194,7 @@ public class MainActivity extends Activity {
 						_signalingChannel.send("cancel");
 					}
 					_callState = CallState.TERMINATED;
+					updateActionButtonTitle();
 
 				}
 				else {
@@ -201,7 +202,9 @@ public class MainActivity extends Activity {
 					// Hang up a call
 					closeRemoteStream();
 					_mediaConnection.close();
+					_signalingChannel.close();
 					_callState = CallState.TERMINATED;
+					updateActionButtonTitle();
 
 				}
 
@@ -315,6 +318,7 @@ public class MainActivity extends Activity {
 			@Override
 			public void onCallback(Object object) {
 				closeRemoteStream();
+				_signalingChannel.close();
 				_callState = CallState.TERMINATED;
 				updateActionButtonTitle();
 			}
@@ -365,11 +369,13 @@ public class MainActivity extends Activity {
 				switch(message) {
 					case "reject":
 						closeMediaConnection();
+						_signalingChannel.close();
 						_callState = CallState.TERMINATED;
 						updateActionButtonTitle();
 						break;
 					case "cancel":
 						closeMediaConnection();
+						_signalingChannel.close();
 						_callState = CallState.TERMINATED;
 						updateActionButtonTitle();
 						dismissIncomingCallDialog();
@@ -566,7 +572,7 @@ public class MainActivity extends Activity {
 						btnAction.setText("Make Call");
 					}
 					else if (CallState.CALLING == _callState) {
-						btnAction.setText("Calling");
+						btnAction.setText("Cancel");
 					}
 					else {
 						btnAction.setText("Hang up");
