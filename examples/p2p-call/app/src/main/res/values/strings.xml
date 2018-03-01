@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Sample-P2P-Call</string>
+    <string name="title_activity_video_chat">VideoCall</string>
+</resources>
