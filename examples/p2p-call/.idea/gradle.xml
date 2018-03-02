@@ -7,8 +7,8 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
-            <option value="$USER_HOME$/exceptions/dev/skyway/sdk-examples/skyway-android-sdk/examples/p2p-call" />
-            <option value="$USER_HOME$/exceptions/dev/skyway/sdk-examples/skyway-android-sdk/examples/p2p-call/app" />
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

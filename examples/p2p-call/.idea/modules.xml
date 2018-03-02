@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$USER_HOME$/exceptions/dev/skyway/sdk-examples/skyway-android-sdk/examples/p2p-call/app/app.iml" filepath="$USER_HOME$/exceptions/dev/skyway/sdk-examples/skyway-android-sdk/examples/p2p-call/app/app.iml" />
-      <module fileurl="file://$USER_HOME$/exceptions/dev/skyway/sdk-examples/skyway-android-sdk/examples/p2p-call/p2p-call.iml" filepath="$USER_HOME$/exceptions/dev/skyway/sdk-examples/skyway-android-sdk/examples/p2p-call/p2p-call.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p2p-call.iml" filepath="$PROJECT_DIR$/p2p-call.iml" />
     </modules>
   </component>
 </project>
