@@ -2,6 +2,12 @@
 
 [日本語](./release-notes.md)
 
+## [Version 1.0.4](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.0.4)
+
+### Fixed
+
+- Fixed bug that causes crash of the app when call destroy after calling disconnect.
+
 ## [Version 1.0.3](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.0.3)
 
 ### Fixed
