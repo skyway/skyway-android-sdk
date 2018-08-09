@@ -2,6 +2,12 @@
 
 [English](./release-notes.en.md)
 
+## [Version 1.0.5](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.0.5)
+
+### Fixed
+
+- サーバへの接続失敗時に稀にクラッシュする不具合を解消しました。
+
 ## [Version 1.0.4](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.0.4)
 
 ### Fixed
