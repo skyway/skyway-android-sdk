@@ -31,6 +31,6 @@ Android 4.2+
 
 ## License
 
-[Apache License, Version 2.0](./LICENSE.txt)
+[Apache License, Version 2.0](./LICENSE)
 
 [NOTICE](./NOTICE.txt)
