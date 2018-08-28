@@ -10,6 +10,12 @@ SkyWay simplifies peer-to-peer data, video, and audio calls using WebRTC.
 ### Supported OS
 Android 4.2+
 
+## License
+
+[Apache License, Version 2.0](./LICENSE.txt)
+
+[NOTICE](./NOTICE.txt)
+
 ---
 ## SkyWay-Android-SDK
 
@@ -23,4 +29,8 @@ SkyWayは、WebRTCを利用したピア·ツー·ピアのデータ、ビデオ�
 ### 対応OS
 Android 4.2+
 
+## License
 
+[Apache License, Version 2.0](./LICENSE.txt)
+
+[NOTICE](./NOTICE.txt)
