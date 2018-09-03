@@ -2,6 +2,13 @@
 
 [English](./release-notes.en.md)
 
+## [Version 1.0.6](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.0.6)
+
+### Fixed
+
+- Peer.destroy()後にgetUserMedia()を呼んだ場合、クラッシュする不具合を解消しました。
+- v.1.0.5とは別の要因により、サーバへの接続失敗時に稀にクラッシュする不具合を解消しました。
+
 ## [Version 1.0.5](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.0.5)
 
 ### Fixed
