@@ -6,7 +6,7 @@ Sample Application of SkyWay Android SDK
 
 ### 1. Download `skyway.aar` & add it to the project
 
-You can download `skyway.aar` from [GitHub's Releases.](https://github.com/skyway/skyway-android-sdk/releases)
+Download `skyway.aar` from [GitHub's Releases](https://github.com/skyway/skyway-android-sdk/releases).
 
 Then, move `skyway.aar` directly into the `examples/{project_name}/app/libs` directory.
 
