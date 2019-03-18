@@ -2,6 +2,14 @@
 
 [English](./release-notes.en.md)
 
+## [Version 1.1.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.1.0)
+
+### Modified
+- 動作環境をAndroid 5.0(API21)以上に変更しました。
+
+### Fixed
+- FirefoxからAndroidへの発信し、DataConnectionで文字列を送信するとクラッシュする不具合を修正しました。
+
 ## [Version 1.0.6](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.0.6)
 
 ### Fixed

@@ -2,12 +2,20 @@
 
 [日本語](./release-notes.md)
 
+## [Version 1.1.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.1.0)
+
+### Modified
+- Target Android API is now 21.
+
+### Fixed
+- Fixed bug that causes a crash of the app when connecting DataConnection between Android app and Firefox 63.0 and later.
+
 ## [Version 1.0.6](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.0.6)
 
 ### Fixed
 
-- Fixed bug that causes crush of the app when call getUserMedia() after calling Peer.destroy().
-- Fixed bug that rarely causes crash of the app when failed to connect the server by the other factor of v1.0.5. 
+- Fixed bug that causes crash of the app when call getUserMedia() after calling Peer.destroy().
+- Fixed bug that rarely causes crash of the app when failed to connect the server by the other factor of v1.0.5.
 
 ## [Version 1.0.5](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.0.5)
 
