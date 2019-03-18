@@ -1,0 +1,22 @@
+# Gradle
+*/.gradle
+*/build
+
+# Local configuration file
+local.properties
+
+# Android Studio
+*.iml
+*/.idea/workspace.xml
+*/.idea/tasks.xml
+*/.idea/gradle.xml
+*/.idea/assetWizardSettings.xml
+*/.idea/dictionaries
+*/.idea/libraries
+*/.idea/caches
+*/.idea/caches/build_file_checksums.ser
+*/.idea/modules.xml
+*/.idea/codeStyles
+*/.idea/inspectionProfiles
+*/app/libs/*
+*/app/build
