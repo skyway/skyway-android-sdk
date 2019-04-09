@@ -2,6 +2,18 @@
 
 [English](./release-notes.en.md)
 
+## [Version 1.1.1](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.1.1)
+
+### Modified
+
+- API認証エラー発生を示すPeerErrorEnum.AUTHENTICATIONをPeerErrorに追加しました。
+- PeerクラスにSDKのバージョンを確認するためのメソッド`getSdkVersion`を追加しました。
+
+### Fixed
+
+- v1.1.0にてAPI認証に失敗する不具合を修正しました。
+- listAllPeers呼び出し時に、取得件数が512より大きい時にクラッシュする不具合を修正しました。
+
 ## [Version 1.1.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.1.0)
 
 ### Modified
