@@ -2,6 +2,17 @@
 
 [日本語](./release-notes.md)
 
+## [Version 1.1.2](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.1.2)
+
+### Modified
+
+- Deprecated Canvas.ScalingEnum.FILL.
+
+### Fixed
+
+- Fixed a bug that Canvas.ScalingEnum.ASPECT_FIT does not work properly.
+- Fixed a bug that stream are not shown in sample application of sfu room and that of mesh room.
+
 ## [Version 1.1.1](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.1.1)
 
 ### Modified
