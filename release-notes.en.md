@@ -12,6 +12,7 @@
 
 - Fixed a bug that Canvas.ScalingEnum.ASPECT_FIT does not work properly.
 - Fixed a bug that stream are not shown in sample application of sfu room and that of mesh room.
+- Fixed a bug that the display collapses when using removeVideoRenderer and addVideoRenderer for the same Canvas.
 
 ## [Version 1.1.1](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.1.1)
 
