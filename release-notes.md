@@ -12,6 +12,7 @@
 
 - Canvas.ScalingEnum.ASPECT_FITが正常に動作しない不具合を修正しました。
 - SFU RoomとMesh Roomのサンプルアプリケーションで映像が表示されない不具合を修正しました。
+- 同一のCanvasに対して、removeVideoRenderer、addVideoRendererを実行すると表示が崩れる不具合を修正しました。
 
 ## [Version 1.1.1](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.1.1)
 
