@@ -192,7 +192,7 @@ public class MainActivity extends Activity {
 		option.mode = RoomOption.RoomModeEnum.SFU;
 
 		// Join Room
-		_room = _peer.joinRoom("sfu_text_" + roomName, option);
+		_room = _peer.joinRoom(roomName, option);
 		_bConnected = true;
 
 		//
