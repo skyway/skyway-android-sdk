@@ -302,7 +302,7 @@ public class MainActivity extends Activity {
 		option.stream = _localStream;
 
 		// Join Room
-		_room = _peer.joinRoom("sfu_video_" + roomName, option);
+		_room = _peer.joinRoom(roomName, option);
 		_bConnected = true;
 
 		//

@@ -193,7 +193,7 @@ public class MainActivity extends Activity {
 		option.mode = RoomOption.RoomModeEnum.MESH;
 
 		// Join Room
-		_room = _peer.joinRoom("mesh_text_" + roomName, option);
+		_room = _peer.joinRoom(roomName, option);
 		_bConnected = true;
 
 		//
