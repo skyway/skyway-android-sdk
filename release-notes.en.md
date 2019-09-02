@@ -4,11 +4,6 @@
 
 ## [Version 1.1.3](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.1.3)
 
-### Modified
-
-- Moved _setupNegotiatorMessageHandlers() to a sub class that inherits shared_from_this.
-- Consolidated common processing of _setupNegotiatorMessageHandler() into ConnectionImpl.
-
 ### Fixed
 
 - Fixed a bug that the app freezes when MediaStream.close() is executed while PeerConnection.close() is not completed normally.
