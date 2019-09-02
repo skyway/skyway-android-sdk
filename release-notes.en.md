@@ -2,6 +2,12 @@
 
 [日本語](./release-notes.md)
 
+## [Version 1.1.3](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.1.3)
+
+### Fixed
+
+- Fixed a bug that could cause MeshRoom.close() to deadlock and freeze the app depending on the timing of calling it.
+
 ## [Version 1.1.2](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.1.2)
 
 ### Modified

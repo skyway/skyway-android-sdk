@@ -2,10 +2,15 @@
 
 [English](./release-notes.en.md)
 
+## [Version 1.1.3](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.1.3)
+
+### Fixed
+
+- 呼び出しタイミングによって、MeshRoom.close()がデッドロックに陥り、アプリをフリーズさせる可能性がある不具合を修正しました。
+
 ## [Version 1.1.2](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.1.2)
 
 ### Modified
-
 - Canvas.ScalingEnum.FILLをdeprecatedに変更しました。
 
 ### Fixed
