@@ -6,7 +6,7 @@
 
 ### Fixed
 
-- MeshRoom.close()を実行すると、アプリがフリーズする不具合を修正しました。
+- 呼び出しタイミングによって、MeshRoom.close()がデッドロックに陥り、アプリをフリーズさせる可能性がある不具合を修正しました。
 
 ## [Version 1.1.2](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.1.2)
 
