@@ -10,6 +10,9 @@
 
 ## [Version 1.1.2](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.1.2)
 
+### Modified
+- Canvas.ScalingEnum.FILLをdeprecatedに変更しました。
+
 ### Fixed
 
 - Canvas.ScalingEnum.ASPECT_FITが正常に動作しない不具合を修正しました。
