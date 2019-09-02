@@ -6,7 +6,7 @@
 
 ### Fixed
 
-- Fixed a bug that the app freezes when MediaStream.close() is executed while PeerConnection.close() is not completed normally.
+- Fixed a bug that the app freezes when MeshRoom.close() is executed.
 
 ## [Version 1.1.2](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.1.2)
 

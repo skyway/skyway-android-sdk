@@ -6,7 +6,7 @@
 
 ### Fixed
 
-- PeerConnection.close()が正常に完了していない状態で、MediaStream.close()を実行すると、アプリがフリーズする不具合を修正しました。
+- MeshRoom.close()を実行すると、アプリがフリーズする不具合を修正しました。
 
 ## [Version 1.1.2](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.1.2)
 
