@@ -6,7 +6,7 @@
 
 ### Added
 
-- MediaConnection, DataConnectionに接続中の統計情報を取得する`getStats`を追加しました
+- `MediaConnection`, `DataConnection`に接続中の統計情報を取得する`getStats`を追加しました
 
 ### Fixed
 

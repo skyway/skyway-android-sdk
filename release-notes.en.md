@@ -6,15 +6,15 @@
 
 ### Added
 
-- Added `getStats` function on MediaConnection, DataConnection for getting statistics of connection.
+- Added `getStats` function on `MediaConnection`, `DataConnection` for getting statistics of connection.
 
 ### Fixed
 
-- Fixed a bug that error occurs when many users Peer.joinRoom at the same time in Mesh room.
+- Fixed a bug that error occurs when many users `Peer.joinRoom` at the same time in Mesh room.
 
 ### Modified
 
-- Changed the max size of data to 20MB when calling MeshRoom.send or SFURoom.send.
+- Changed the max size of data to 20MB when calling `MeshRoom.send` or `SFURoom.send`.
 
 ## [Version 1.1.3](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.1.3)
 
