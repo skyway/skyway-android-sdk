@@ -2,6 +2,20 @@
 
 [English](./release-notes.en.md)
 
+## [Version 1.2.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.2.0)
+
+### Added
+
+- `MediaConnection`, `DataConnection`に接続中の統計情報を取得する`getStats`を追加しました
+
+### Fixed
+
+- 同じ`MeshRoom`に対して多数のユーザが同時に`Peer.joinRoom`した際に、エラーが発生する不具合を修正しました
+
+### Modified
+
+- `MeshRoom`, `SFURoom`の`send`関数において、送信可能なデータのサイズ上限を20MBに変更しました
+
 ## [Version 1.1.3](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.1.3)
 
 ### Fixed
