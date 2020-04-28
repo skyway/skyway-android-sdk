@@ -14,7 +14,7 @@
 
 ### Modified
 
-- Changed the max size of data that can be sent to 20MB.
+- Changed the max size of data to 20MB when calling MeshRoom.send or SFURoom.send.
 
 ## [Version 1.1.3](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.1.3)
 

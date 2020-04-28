@@ -10,7 +10,7 @@
 
 ### Fixed
 
-- Meshルームにおいて、多数のユーザが同時にPeer.joinRoomするとエラーが発生する不具合を修正しました
+- 同じ`MeshRoom`に対して多数のユーザが同時に`Peer.joinRoom`した際に、エラーが発生する不具合を修正しました
 
 ### Modified
 
