@@ -13,6 +13,7 @@
 - Fixed a bug that error occurs when many users Peer.joinRoom at the same time in Mesh room.
 
 ### Modified
+
 - Changed the max size of data that can be sent to 20MB.
 
 ## [Version 1.1.3](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.1.3)
