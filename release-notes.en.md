@@ -6,7 +6,7 @@
 
 ### Added
 
-- Added `getStats` function on SKWMediaConnection, SKWDataConnection for getting statistics of connection.
+- Added `getStats` function on MediaConnection, DataConnection for getting statistics of connection.
 
 ### Fixed
 
