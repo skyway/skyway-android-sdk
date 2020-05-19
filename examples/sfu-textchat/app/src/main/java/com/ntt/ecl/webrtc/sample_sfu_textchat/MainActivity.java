@@ -99,7 +99,7 @@ public class MainActivity extends Activity {
 			@Override
 			public void onCallback(Object object) {
 				PeerError error = (PeerError) object;
-				Log.d(TAG, "[On/Error]" + error.message);
+				Log.d(TAG, "[On/Error]" + error.getMessage());
 			}
 		});
 
