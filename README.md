@@ -4,7 +4,7 @@
 SkyWay simplifies peer-to-peer data, video, and audio calls using WebRTC.
 
 ### Learn more
-* [Tutorial](https://webrtc.ecl.ntt.com/en/android-tutorial.html)
+* [Tutorial](https://webrtc.ecl.ntt.com/en/documents/android-sdk.html)
 * [API Reference](https://webrtc.ecl.ntt.com/en/android-reference/)
 
 ### Supported OS
@@ -23,7 +23,7 @@ Android 5.0+
 SkyWayは、WebRTCを利用したピア·ツー·ピアのデータ、ビデオ、オーディオ通信を簡単に実現します。
 
 ### 関連リンク
-* [チュートリアル](https://webrtc.ecl.ntt.com/android-tutorial.html)
+* [チュートリアル](https://webrtc.ecl.ntt.com/documents/android-sdk.html)
 * [API Reference](https://webrtc.ecl.ntt.com/android-reference/)
 
 ### 対応OS
