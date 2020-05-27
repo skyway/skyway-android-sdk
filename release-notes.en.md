@@ -2,6 +2,12 @@
 
 [日本語](./release-notes.md)
 
+## [Version 1.3.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.3.0)
+
+### Added
+
+- Added `getDisplayMedia` to get device screen stream.
+
 ## [Version 1.2.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.2.0)
 
 ### Added
