@@ -107,9 +107,9 @@
 
 ### Fixed
 
-- Fixed bug that the application halts when the device doesn't have a front camera
-- Fixed bug that the debugging log level is ignored
-- Fixed bug in an IPv6 environment
+- Fixed bug that the application halts when the device doesn't have a front camera.
+- Fixed bug that the debugging log level is ignored.
+- Fixed bug in an IPv6 environment.
 
 ## [Version 1.0.1](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.0.1)
 
