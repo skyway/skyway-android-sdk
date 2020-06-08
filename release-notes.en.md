@@ -9,8 +9,6 @@
 - Changed `PeerError.message` to private property not public.
     - Use `PeerError.getMessage()` to acceess `PeerError.message`.
 
-### Modified
-
 - Limited the interval between consecutive data sendings by using SFU/MeshRoom.send().
   - The frequency of consecutive data sending is limited to once every 100 msec.
   - The data that exceeds the limit is queued and sent sequentially every 100 msec.

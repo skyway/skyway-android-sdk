@@ -9,8 +9,6 @@
 - `PeerError.message`をpublicプロパティからprivateプロパティに変更しました。
     - `PeerError.message`を取得するには、`PeerError.getMessage()`を使用してください。
 
-### Modified
-
 - `MeshRoom`, `SFURoom`の`send`関数を使用してデータを送信する際、その送信間隔に制限を設けました。
   - 連続してデータを送信する頻度は 100 ミリ秒に 1 回までに制限されます。
   - 制限を超えたデータはキューイングされ、100 ミリ秒ごとに順次送信されます。
