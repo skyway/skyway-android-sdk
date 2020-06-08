@@ -2,6 +2,19 @@
 
 [日本語](./release-notes.md)
 
+## [Version 2.0.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.0.0)
+
+### Breaking Changes
+
+- Changed `PeerError.message` to private property not public.
+    - Use `PeerError.getMessage()` to acceess `PeerError.message`.
+
+### Modified
+
+- Limited the interval between consecutive data sendings by using SFU/MeshRoom.send().
+  - The frequency of consecutive data sending is limited to once every 100 msec.
+  - The data that exceeds the limit is queued and sent sequentially every 100 msec.
+
 ## [Version 1.3.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.3.0)
 
 ### Added

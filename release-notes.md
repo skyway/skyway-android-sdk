@@ -2,6 +2,19 @@
 
 [English](./release-notes.en.md)
 
+## [Version 2.0.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.0.0)
+
+### Breaking Changes
+
+- `PeerError.message`をpublicプロパティからprivateプロパティに変更しました。
+    - `PeerError.message`を取得するには、`PeerError.getMessage()`を使用してください。
+
+### Modified
+
+- `MeshRoom`, `SFURoom`の`send`関数を使用してデータを送信する際、その送信間隔に制限を設けました。
+  - 連続してデータを送信する頻度は 100 ミリ秒に 1 回までに制限されます。
+  - 制限を超えたデータはキューイングされ、100 ミリ秒ごとに順次送信されます。
+
 ## [Version 1.3.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.3.0)
 
 ### Added
@@ -12,7 +25,7 @@
 
 ### Added
 
-- `MediaConnection`, `DataConnection`に接続中の統計情報を取得する`getStats`を追加しました
+- `MediaConnection`, `DataConnection`に接続中の統計情報を取得する`getStats`を追加しました。
 
 ### Fixed
 
