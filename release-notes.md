@@ -2,25 +2,36 @@
 
 [English](./release-notes.en.md)
 
+## [Version 2.0.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.0.0)
+
+### Breaking Changes
+
+- `PeerError.message`をpublicプロパティからprivateプロパティに変更しました。
+    - `PeerError.message`を取得するには、`PeerError.getMessage()`を使用してください。
+
+- `MeshRoom`, `SFURoom`の`send`関数を使用してデータを送信する際、その送信間隔に制限を設けました。
+  - 連続してデータを送信する頻度は 100 ミリ秒に 1 回までに制限されます。
+  - 制限を超えたデータはキューイングされ、100 ミリ秒ごとに順次送信されます。
+
 ## [Version 1.3.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.3.0)
 
 ### Added
 
-- 端末画面のメディアストリームを取得する`getDisplayMedia`を追加しました
+- 端末画面のメディアストリームを取得する`getDisplayMedia`を追加しました。
 
 ## [Version 1.2.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.2.0)
 
 ### Added
 
-- `MediaConnection`, `DataConnection`に接続中の統計情報を取得する`getStats`を追加しました
+- `MediaConnection`, `DataConnection`に接続中の統計情報を取得する`getStats`を追加しました。
 
 ### Fixed
 
-- 同じ`MeshRoom`に対して多数のユーザが同時に`Peer.joinRoom`した際に、エラーが発生する不具合を修正しました
+- 同じ`MeshRoom`に対して多数のユーザが同時に`Peer.joinRoom`した際に、エラーが発生する不具合を修正しました。
 
 ### Modified
 
-- `MeshRoom`, `SFURoom`の`send`関数において、送信可能なデータのサイズ上限を20MBに変更しました
+- `MeshRoom`, `SFURoom`の`send`関数において、送信可能なデータのサイズ上限を20MBに変更しました。
 
 ## [Version 1.1.3](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.1.3)
 

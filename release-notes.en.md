@@ -2,6 +2,17 @@
 
 [日本語](./release-notes.md)
 
+## [Version 2.0.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.0.0)
+
+### Breaking Changes
+
+- Changed `PeerError.message` to private property not public.
+    - Use `PeerError.getMessage()` to acceess `PeerError.message`.
+
+- Limited the interval between consecutive data sendings by using SFU/MeshRoom.send().
+  - The frequency of consecutive data sending is limited to once every 100 msec.
+  - The data that exceeds the limit is queued and sent sequentially every 100 msec.
+
 ## [Version 1.3.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.3.0)
 
 ### Added
@@ -94,9 +105,9 @@
 
 ### Fixed
 
-- Fixed bug that the application halts when the device doesn't have a front camera
-- Fixed bug that the debugging log level is ignored
-- Fixed bug in an IPv6 environment
+- Fixed bug that the application halts when the device doesn't have a front camera.
+- Fixed bug that the debugging log level is ignored.
+- Fixed bug in an IPv6 environment.
 
 ## [Version 1.0.1](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.0.1)
 
