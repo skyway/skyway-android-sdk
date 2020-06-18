@@ -66,8 +66,6 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-		Window wnd = getWindow();
-		wnd.addFlags(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_main);
 
 		_tvMessage = (TextView) findViewById(R.id.tvMessage);
@@ -178,6 +176,10 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onStart() {
 		super.onStart();
+
+		// Hide the status bar.
+		View decorView = getWindow().getDecorView();
+		decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN);
 
 		// Disable Sleep and Screen Lock
 		Window wnd = getWindow();
