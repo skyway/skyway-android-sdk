@@ -1,6 +1,7 @@
 package com.ntt.ecl.webrtc.sample_p2p_videochat;
 
 import android.Manifest;
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.FragmentManager;
 import android.content.Context;
@@ -209,17 +210,24 @@ public class MainActivity extends Activity {
 	protected void onStart() {
 		super.onStart();
 
+		Window window = getWindow();
+		View decorView = getWindow().getDecorView();
+
 		// @See: https://developer.android.com/training/system-ui/status#41
 		// Hide the status bar.
-		window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
+		int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
+		decorView.setSystemUiVisibility(uiOptions);
+
 		// Remember that you should never show the action bar if the
 		// status bar is hidden, so hide that too if necessary.
-		actionBar?.hide()
+		ActionBar actionBar = getActionBar();
+		if (actionBar != null) {
+			actionBar.hide();
+		}
 
 		// Disable Sleep and Screen Lock
-		Window wnd = getWindow();
-		wnd.addFlags(WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON);
-		wnd.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+		window.addFlags(WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON);
+		window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 	}
 
 	@Override
