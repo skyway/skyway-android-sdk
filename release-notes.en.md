@@ -2,6 +2,14 @@
 
 [日本語](./release-notes.md)
 
+## [Version 2.0.1](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.0.1)
+
+### Fixed
+
+- Fixed a crash when verifying a TLS server certificate.
+  - Resolves an issue where the Android SDK would crash when using a 64bit library.
+
+
 ## [Version 2.0.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.0.0)
 
 ### Breaking Changes
