@@ -2,6 +2,13 @@
 
 [English](./release-notes.en.md)
 
+## [Version 2.0.1](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.0.1)
+
+### Fixed
+
+- 特定の端末でTLS サーバー証明書の検証時にクラッシュする不具合を修正しました。  
+
+
 ## [Version 2.0.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.0.0)
 
 ### Breaking Changes
