@@ -2,12 +2,17 @@
 
 [日本語](./release-notes.md)
 
+## [Version 2.0.2](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.0.2)
+
+### Fixed
+
+- Addressed a vulnerability in SCTP.
+
 ## [Version 2.0.1](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.0.1)
 
 ### Fixed
 
 - Fixed a crash when verifying a TLS server certificate on certain devices. 
-
 
 ## [Version 2.0.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.0.0)
 
