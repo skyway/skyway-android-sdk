@@ -7,7 +7,6 @@
 ### Fixed
 
 - メディア通信の疎通を一定回数以上繰り返すとアプリがクラッシュする不具合を修正しました。
-
 - 特定の機種でgetUserMedia()を繰り返し実行するとクラッシュする不具合を修正しました。
 
 ## [Version 2.0.2](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.0.2)
