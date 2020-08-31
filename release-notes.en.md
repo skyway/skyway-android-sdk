@@ -7,7 +7,7 @@
 ### Fixed
 
 - Fixed a bug that caused the app to crash after repeating establishing media communication more than a certain number of times.
-
+- Fixed a bug that caused a crash when repeatedly executing getUserMedia() on certain models.
 
 ## [Version 2.0.2](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.0.2)
 
