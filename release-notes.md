@@ -2,6 +2,12 @@
 
 [English](./release-notes.en.md)
 
+## [Version 2.0.3](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.0.3)
+
+### Fixed
+
+- メディア通信の疎通を一定回数以上繰り返すとアプリがクラッシュする不具合を修正しました。
+
 ## [Version 2.0.2](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.0.2)
 
 ### Fixed
