@@ -2,6 +2,12 @@
 
 [English](./release-notes.en.md)
 
+## [Version 2.0.4](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.0.4)
+
+### Fixed
+
+- 通信状態が不安定等の理由により、ICE Connectionが一時的な切断状態になった場合に、再接続接続を行わずに切断処理をしていた不具合を修正しました。
+
 ## [Version 2.0.3](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.0.3)
 
 ### Fixed

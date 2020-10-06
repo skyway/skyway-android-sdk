@@ -2,6 +2,11 @@
 
 [日本語](./release-notes.md)
 
+## [Version 2.0.4](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.0.4)
+
+### Fixed
+- Fixed a problem in which the ICE Connection was disconnected without reconnecting when the ICE Connection was temporarily disconnected due to communication instability or other reasons.
+
 ## [Version 2.0.3](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.0.3)
 
 ### Fixed
