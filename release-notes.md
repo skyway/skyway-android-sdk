@@ -2,6 +2,14 @@
 
 [English](./release-notes.en.md)
 
+## [Version 2.1.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.1.0)
+
+### Added
+- `Connection.close` に `forceClose` オプションを追加しました。このオプションを有効にすると、接続相手においても `Connection` が即座にクローズします。
+
+### Deprecated
+- `forceClose` のデフォルト値 `false` は将来のバージョンでは `true` に変更される可能性があります。
+
 ## [Version 2.0.4](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.0.4)
 
 ### Fixed
