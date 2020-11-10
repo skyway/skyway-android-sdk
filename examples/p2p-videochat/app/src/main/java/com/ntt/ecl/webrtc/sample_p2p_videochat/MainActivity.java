@@ -163,7 +163,7 @@ public class MainActivity extends Activity {
 
 					// Hang up a call
 					closeRemoteStream();
-					_mediaConnection.close();
+					_mediaConnection.close(true);
 
 				}
 
@@ -308,7 +308,7 @@ public class MainActivity extends Activity {
 
 		if (null != _mediaConnection)	{
 			if (_mediaConnection.isOpen()) {
-				_mediaConnection.close();
+				_mediaConnection.close(true);
 			}
 			unsetMediaCallbacks();
 		}
@@ -380,7 +380,7 @@ public class MainActivity extends Activity {
 		}
 
 		if (null != _mediaConnection) {
-			_mediaConnection.close();
+			_mediaConnection.close(true);
 		}
 
 		CallOption option = new CallOption();

@@ -147,7 +147,7 @@ public class MainActivity extends Activity {
 				}
 				else {
 					// Hang up a connection
-					_dataConnection.close();
+					_dataConnection.close(true);
 				}
 
 				v.setEnabled(true);
@@ -317,7 +317,7 @@ public class MainActivity extends Activity {
 	private void destroyPeer() {
 		if (null != _dataConnection)	{
 			if (_dataConnection.isOpen()) {
-				_dataConnection.close();
+				_dataConnection.close(true);
 			}
 			unsetDataCallbacks();
 		}
@@ -376,7 +376,7 @@ public class MainActivity extends Activity {
 		}
 
 		if (null != _dataConnection) {
-			_dataConnection.close();
+			_dataConnection.close(true);
 		}
 
 		ConnectOption option = new ConnectOption();

@@ -2,6 +2,14 @@
 
 [日本語](./release-notes.md)
 
+## [Version 2.1.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.1.0)
+
+### Added
+- Add an `forceClose` option when calling `Connection.close` to signal intention to disconnection to the remote peer instantly.
+
+### Deprecated
+- The `false` default value of `forceClose` is deprecated and may be changed to `true` in future versions.
+
 ## [Version 2.0.4](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.0.4)
 
 ### Fixed
