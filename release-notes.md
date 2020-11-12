@@ -10,13 +10,13 @@
 ### Deprecated
 - `forceClose` のデフォルト値 `false` は将来のバージョンでは `true` に変更される可能性があります。
 
-## [Version 2.0.4](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.0.4) - 2020-08-31
+## [Version 2.0.4](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.0.4) - 2020-10-05
 
 ### Fixed
 
 - 通信状態が不安定等の理由により、WebRTC通信が一時的な切断状態になった場合に、自動で再接続を試行するように修正しました。
 
-## [Version 2.0.3](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.0.3) - 2020-08-18
+## [Version 2.0.3](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.0.3) - 2020-08-31
 
 ### Fixed
 
@@ -103,7 +103,7 @@
 ### Fixed
 - FirefoxからAndroidへの発信し、DataConnectionで文字列を送信するとクラッシュする不具合を修正しました。
 
-## [Version 1.0.6](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.0.6) - 2018-09-03
+## [Version 1.0.6](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.0.6) - 2018-09-04
 
 ### Fixed
 

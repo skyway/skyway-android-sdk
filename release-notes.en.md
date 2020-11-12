@@ -10,12 +10,12 @@
 ### Deprecated
 - The `false` default value of `forceClose` is deprecated and may be changed to `true` in future versions.
 
-## [Version 2.0.4](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.0.4) - 2020-08-31
+## [Version 2.0.4](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.0.4) - 2020-10-05
 
 ### Fixed
 - Fixed to automatically try to reconnect when WebRTC communication state is temporarily disconnected due to unstable communication or other reasons.
 
-## [Version 2.0.3](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.0.3) - 2020-08-18
+## [Version 2.0.3](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.0.3) - 2020-08-31
 
 ### Fixed
 
@@ -103,7 +103,7 @@
 ### Fixed
 - Fixed bug that causes a crash of the app when connecting DataConnection between Android app and Firefox 63.0 and later.
 
-## [Version 1.0.6](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.0.6) - 2018-09-03
+## [Version 1.0.6](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.0.6) - 2018-09-04
 
 ### Fixed
 
