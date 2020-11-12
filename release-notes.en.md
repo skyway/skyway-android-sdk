@@ -2,7 +2,7 @@
 
 [日本語](./release-notes.md)
 
-## [Version 2.1.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.1.0)
+## [Version 2.1.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.1.0) - 2020-11-10
 
 ### Added
 - Add an `forceClose` option when calling `Connection.close` to signal intention to disconnection to the remote peer instantly.
@@ -10,31 +10,31 @@
 ### Deprecated
 - The `false` default value of `forceClose` is deprecated and may be changed to `true` in future versions.
 
-## [Version 2.0.4](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.0.4)
+## [Version 2.0.4](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.0.4) - 2020-10-05
 
 ### Fixed
 - Fixed to automatically try to reconnect when WebRTC communication state is temporarily disconnected due to unstable communication or other reasons.
 
-## [Version 2.0.3](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.0.3)
+## [Version 2.0.3](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.0.3) - 2020-08-31
 
 ### Fixed
 
 - Fixed a bug that caused the app to crash after repeating establishing media communication more than a certain number of times.
 - Fixed a bug that caused a crash when repeatedly executing getUserMedia() on certain models.
 
-## [Version 2.0.2](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.0.2)
+## [Version 2.0.2](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.0.2) - 2020-06-30
 
 ### Fixed
 
 - Addressed a vulnerability in SCTP.
 
-## [Version 2.0.1](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.0.1)
+## [Version 2.0.1](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.0.1) - 2020-06-22
 
 ### Fixed
 
 - Fixed a crash when verifying a TLS server certificate on certain devices. 
 
-## [Version 2.0.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.0.0)
+## [Version 2.0.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.0.0) - 2020-06-09
 
 ### Breaking Changes
 
@@ -45,13 +45,13 @@
   - The frequency of consecutive data sending is limited to once every 100 msec.
   - The data that exceeds the limit is queued and sent sequentially every 100 msec.
 
-## [Version 1.3.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.3.0)
+## [Version 1.3.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.3.0) - 2020-05-27
 
 ### Added
 
 - Added `getDisplayMedia` to get device screen stream.
 
-## [Version 1.2.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.2.0)
+## [Version 1.2.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.2.0) - 2020-04-28
 
 ### Added
 
@@ -65,13 +65,13 @@
 
 - Changed the max size of data to 20MB when calling `MeshRoom.send` or `SFURoom.send`.
 
-## [Version 1.1.3](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.1.3)
+## [Version 1.1.3](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.1.3) - 2019-09-02
 
 ### Fixed
 
 - Fixed a bug that could cause MeshRoom.close() to deadlock and freeze the app depending on the timing of calling it.
 
-## [Version 1.1.2](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.1.2)
+## [Version 1.1.2](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.1.2) - 2019-05-20
 
 ### Modified
 
@@ -83,7 +83,7 @@
 - Fixed a bug that stream are not shown in sample application of sfu room and that of mesh room.
 - Fixed a bug that the display collapses when using removeVideoRenderer and addVideoRenderer for the same Canvas.
 
-## [Version 1.1.1](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.1.1)
+## [Version 1.1.1](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.1.1) - 2019-04-09
 
 ### Modified
 
@@ -95,7 +95,7 @@
 - Fixed a bug that API authentication fails in v1.1.0.
 - Fixed a bug that crashes when the number of acquired items is larger than 512 when calling listAllPeers.
 
-## [Version 1.1.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.1.0)
+## [Version 1.1.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.1.0) - 2019-03-18
 
 ### Modified
 - Target Android API is now 21.
@@ -103,26 +103,26 @@
 ### Fixed
 - Fixed bug that causes a crash of the app when connecting DataConnection between Android app and Firefox 63.0 and later.
 
-## [Version 1.0.6](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.0.6)
+## [Version 1.0.6](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.0.6) - 2018-09-04
 
 ### Fixed
 
 - Fixed bug that causes crash of the app when call getUserMedia() after calling Peer.destroy().
 - Fixed bug that rarely causes crash of the app when failed to connect the server by the other factor of v1.0.5.
 
-## [Version 1.0.5](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.0.5)
+## [Version 1.0.5](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.0.5) - 2018-08-09
 
 ### Fixed
 
 - Fixed bug that rarely causes crash of the app when connection to server fails.
 
-## [Version 1.0.4](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.0.4)
+## [Version 1.0.4](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.0.4) - 2018-04-10
 
 ### Fixed
 
 - Fixed bug that causes crash of the app when call destroy after calling disconnect.
 
-## [Version 1.0.3](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.0.3)
+## [Version 1.0.3](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.0.3) - 2018-03-16
 
 ### Fixed
 
@@ -133,7 +133,7 @@
 - Fixed bug that causes crash of the app when connecting DataConnection.
 - Fixed bug that re-joining to the same room after leaving it may fail.
 
-## [Version 1.0.2](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.0.2)
+## [Version 1.0.2](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.0.2) - 2017-10-27
 
 ### Fixed
 
@@ -141,12 +141,12 @@
 - Fixed bug that the debugging log level is ignored.
 - Fixed bug in an IPv6 environment.
 
-## [Version 1.0.1](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.0.1)
+## [Version 1.0.1](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.0.1) - 2017-09-15
 
 ### Fixed
 
 - Fixed bug that metadata on Media/DataConnection class was not set.
 
-## [Version 1.0.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.0.0)
+## [Version 1.0.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.0.0) - 2017-09-05
 
 - first release
