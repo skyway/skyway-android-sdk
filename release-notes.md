@@ -23,7 +23,7 @@
 - メディア通信の疎通を一定回数以上繰り返すとアプリがクラッシュする不具合を修正しました。
 - 特定の機種でgetUserMedia()を繰り返し実行するとクラッシュする不具合を修正しました。
 
-## [Version 2.0.2](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.0.2) - 2020-07-30
+## [Version 2.0.2](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.0.2) - 2020-06-30
 
 ### Fixed
 
@@ -103,14 +103,14 @@
 ### Fixed
 - FirefoxからAndroidへの発信し、DataConnectionで文字列を送信するとクラッシュする不具合を修正しました。
 
-## [Version 1.0.6](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.0.6) - 2018-11-09
+## [Version 1.0.6](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.0.6) - 2018-09-03
 
 ### Fixed
 
 - Peer.destroy()後にgetUserMedia()を呼んだ場合、クラッシュする不具合を解消しました。
 - v.1.0.5とは別の要因により、サーバへの接続失敗時に稀にクラッシュする不具合を解消しました。
 
-## [Version 1.0.5](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.0.5) - 2018-09-03
+## [Version 1.0.5](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.0.5) - 2018-08-09
 
 ### Fixed
 
