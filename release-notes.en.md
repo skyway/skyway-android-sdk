@@ -2,6 +2,12 @@
 
 [日本語](./release-notes.md)
 
+## [Version 2.2.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.2.0) - 2020-11-16
+
+### Added
+
+- Added `tryReconnectMedia` and `tryReconnectData` option to `PeerOption`. This enables to try to reconnect automatically when the WebRTC communication state is temporarily disconnected due to unstable communication or other reasons. The default value is false.
+
 ## [Version 2.1.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.1.0) - 2020-11-10
 
 ### Added
@@ -32,7 +38,7 @@
 
 ### Fixed
 
-- Fixed a crash when verifying a TLS server certificate on certain devices. 
+- Fixed a crash when verifying a TLS server certificate on certain devices.
 
 ## [Version 2.0.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.0.0) - 2020-06-09
 
