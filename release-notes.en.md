@@ -2,6 +2,12 @@
 
 [日本語](./release-notes.md)
 
+## [Version 2.3.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.3.0) - 2020-12-22
+
+### Added
+
+- Added `fetchPeerExists` API to fetch whether a peer exists. You can call this API once per second per peer.
+
 ## [Version 2.2.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.2.0) - 2020-11-16
 
 ### Added

@@ -2,6 +2,12 @@
 
 [English](./release-notes.en.md)
 
+## [Version 2.3.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.3.0) - 2020-12-22
+
+### Added
+
+- Peerの存在を確認することができる `fetchPeerExists` メソッドを追加しました。1秒に1回利用することが可能です。
+
 ## [Version 2.2.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.2.0) - 2020-11-16
 
 ### Added
