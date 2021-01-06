@@ -8,6 +8,12 @@
 
 - Added `fetchPeerExists` API to fetch whether a peer exists. You can call this API once per second per peer.
 
+### Fixed
+
+- Fixed a bug that the PeerID would change when a Peer created without specifying PeerID automatically reconnected to SkyWay's signaling server due to reasons such as network disconnection of the mobile device.
+- Fixed a bug that after updating a credential used for API key authentication (Peer authentication), caused a Peer to fail to reconnect to SkyWay's signaling server when it automatically reconnected.
+- Fixed a bug that caused the open event of Peer to fire again when the Peer automatically reconnected to SkyWay's signaling server.
+
 ## [Version 2.2.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.2.0) - 2020-11-16
 
 ### Added
