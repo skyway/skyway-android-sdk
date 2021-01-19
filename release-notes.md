@@ -2,6 +2,12 @@
 
 [English](./release-notes.en.md)
 
+## [Version 2.4.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.4.0) - 2021-01-19
+
+### Fixed
+
+- シグナリングサーバへの接続プロセスを修正し、`Peer` からディスパッチャーサーバへのリクエストが失敗した場合に再接続するようにしました。
+
 ## [Version 2.3.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.3.0) - 2020-12-22
 
 ### Added
