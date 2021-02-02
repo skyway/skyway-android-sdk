@@ -2,6 +2,12 @@
 
 [English](./release-notes.en.md)
 
+## [Version 2.5.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.5.0) - 2021-02-02
+
+### Changed
+
+- `dataChannel.send`の送信間隔を変更し、100msec未満の間隔で連続送信する際も遅延なくデータの送信を行うことができるようになりました。
+
 ## [Version 2.4.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.4.0) - 2021-01-19
 
 ### Fixed

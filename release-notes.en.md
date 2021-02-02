@@ -2,6 +2,12 @@
 
 [日本語](./release-notes.md)
 
+## [Version 2.5.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.5.0) - 2021-02-02
+
+### Changed
+
+- Changed `dataChannel.send()` interval so that multiple data can be transmitted without delay even when continuously transmitting at an intervals of less than 100 msec.
+
 ## [Version 2.4.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.4.0) - 2021-01-19
 
 ### Fixed
