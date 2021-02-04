@@ -226,7 +226,6 @@ public class MainActivity extends Activity {
 				_room.on(Room.RoomEventEnum.PEER_JOIN, null);
 				_room.on(Room.RoomEventEnum.PEER_LEAVE, null);
 				_room.on(Room.RoomEventEnum.STREAM, null);
-				_room.on(Room.RoomEventEnum.REMOVE_STREAM, null);
 
 				_room = null;
 				_bConnected = false;
