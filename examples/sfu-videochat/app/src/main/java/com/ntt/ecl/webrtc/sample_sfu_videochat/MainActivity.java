@@ -99,12 +99,6 @@ public class MainActivity extends Activity {
 				Log.d(TAG, "[On/Close]");
 			}
 		});
-		_peer.on(Peer.PeerEventEnum.DISCONNECTED, new OnCallback() {
-			@Override
-			public void onCallback(Object object) {
-				Log.d(TAG, "[On/Disconnected]");
-			}
-		});
 		_peer.on(Peer.PeerEventEnum.ERROR, new OnCallback() {
 			@Override
 			public void onCallback(Object object) {
@@ -254,9 +248,6 @@ public class MainActivity extends Activity {
 
 		if (null != _peer) {
 			unsetPeerCallback(_peer);
-			if (!_peer.isDisconnected()) {
-				_peer.disconnect();
-			}
 
 			if (!_peer.isDestroyed()) {
 				_peer.destroy();
@@ -278,7 +269,6 @@ public class MainActivity extends Activity {
 		peer.on(Peer.PeerEventEnum.CONNECTION, null);
 		peer.on(Peer.PeerEventEnum.CALL, null);
 		peer.on(Peer.PeerEventEnum.CLOSE, null);
-		peer.on(Peer.PeerEventEnum.DISCONNECTED, null);
 		peer.on(Peer.PeerEventEnum.ERROR, null);
 	}
 
