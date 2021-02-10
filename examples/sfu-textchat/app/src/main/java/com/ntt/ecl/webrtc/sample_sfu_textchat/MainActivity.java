@@ -87,12 +87,7 @@ public class MainActivity extends Activity {
 				Log.d(TAG, "[On/Close]");
 			}
 		});
-		_peer.on(Peer.PeerEventEnum.DISCONNECTED, new OnCallback() {
-			@Override
-			public void onCallback(Object object) {
-				Log.d(TAG, "[On/Disconnected]");
-			}
-		});
+
 		_peer.on(Peer.PeerEventEnum.ERROR, new OnCallback() {
 			@Override
 			public void onCallback(Object object) {
