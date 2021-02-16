@@ -2,6 +2,16 @@
 
 [English](./release-notes.en.md)
 
+## [Version 2.6.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.6.0) - 2021-02-16
+
+### Deprecated
+
+- `Peer`の`reconnect`メソッドを非推奨にしました。代わりに`Peer`の再作成を推奨します。
+- `Peer`の`disconnect`メソッドを非推奨にしました。代わりに`Peer`の`destroy`メソッドの使用を推奨します。
+- `PeerEventEnum`の`DISCONNECTED`イベントを非推奨にしました。代わりに`PeerEventEnum`の`CLOSE`イベントの使用を推奨します。
+- `RoomEventEnum`の`REMOVE_STREAM`イベントを非推奨にしました。代わりに`RoomEventEnum`の`PEER_LEAVE`イベントの使用を推奨します。
+
+
 ## [Version 2.5.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.5.0) - 2021-02-02
 
 ### Changed

@@ -2,6 +2,16 @@
 
 [日本語](./release-notes.md)
 
+## [Version 2.6.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.6.0) - 2021-02-16
+
+### Deprecated
+
+- Deprecated `reconnect` method of `Peer`. Recreate `Peer` instance instead.
+- Deprecated `disconnect` method of `Peer`. Use `disconnect` method of `Peer` instead.
+- Deprecated `DISCONNECTED` event of `PeerEventEnum`. Use `CLOSE` event of `PeerEventEnum` instead.
+- Deprecated `REMOVE_STREAM` event of `RoomEventEnum`. Use `PEER_LEAVE` evnet of `RoomEventEnum` instead.
+
+
 ## [Version 2.5.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.5.0) - 2021-02-02
 
 ### Changed
