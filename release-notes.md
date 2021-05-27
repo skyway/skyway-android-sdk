@@ -2,6 +2,23 @@
 
 [English](./release-notes.en.md)
 
+
+## [Version 3.0.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v3.0.0) - 2021-05-27
+
+### Breaking Changed
+
+- 内部で利用しているWebRTCライブラリを更新し、動作の安定性を向上させました。
+  - Chrome71以前、iOS/Android SDK 1.0.6以前、WebRTC Gateway v0.1.0以前との疎通ができなくなります。 ([参考](https://support.skyway.io/hc/articles/900005631283))
+- カメラが3つ以上ある端末において `switchCamera` 実行時に、前面カメラと背面カメラが交互に切り替わるようにしました。
+
+### Fixed
+
+- `Peer` がシグナリングサーバと自動再接続した際に、各種操作が正常に動作しない不具合を修正しました。
+- Peer認証に利用されるCredentialの更新後に `Peer` がシグナリングサーバと自動再接続する際に、更新前の `Credential` を利用してしまう不具合を修正しました。
+- ProGuard利用時にアプリがクラッシュする不具合を修正しました。
+- `Canvas.ScalingEnum.ASPECT_FIT`が正常に動作しない不具合を修正しました。
+- セキュリティの強化を実施しました。
+
 ## [Version 2.6.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v2.6.0) - 2021-02-16
 
 ### Deprecated
