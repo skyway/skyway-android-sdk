@@ -3,6 +3,12 @@
 [日本語](./release-notes.md)
 
 
+## [Version 3.0.1](https://github.com/skyway/skyway-android-sdk/releases/tag/v3.0.1) - 2021-07-09
+
+### Fixed
+
+- Fixed a rare crash when decode VP8 video codec by hardware decoder
+
 ## [Version 3.0.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v3.0.0) - 2021-05-27
 
 ### Breaking Changed
