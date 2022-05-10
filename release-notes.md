@@ -2,6 +2,11 @@
 
 [English](./release-notes.en.md)
 
+## [Version 3.1.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v3.1.0) - 2022-05-10
+
+### Added
+
+- サーバへリクエストを送信する際のリクエストヘッダに、SNIの情報を追加しました。
 
 ## [Version 3.0.1](https://github.com/skyway/skyway-android-sdk/releases/tag/v3.0.1) - 2021-07-09
 
