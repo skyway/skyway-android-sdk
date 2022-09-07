@@ -2,6 +2,12 @@
 
 [English](./release-notes.en.md)
 
+## [Version 3.1.1](https://github.com/skyway/skyway-android-sdk/releases/tag/v3.1.1) - 2022-09-07
+
+### Fixed
+
+- 切断処理を実行した際に、アプリケーションがクラッシュする可能性がある不具合を修正しました。
+
 ## [Version 3.1.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v3.1.0) - 2022-05-10
 
 ### Added

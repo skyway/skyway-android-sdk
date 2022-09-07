@@ -2,6 +2,12 @@
 
 [日本語](./release-notes.md)
 
+## [Version 3.1.1](https://github.com/skyway/skyway-android-sdk/releases/tag/v3.1.1) - 2022-09-07
+
+### Fixed
+
+- Fixed a bug that could cause the application to crash after disconnecting the connection.
+
 ## [Version 3.1.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v3.1.0) - 2022-05-10
 
 ### Added
