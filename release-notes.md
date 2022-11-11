@@ -2,6 +2,16 @@
 
 [English](./release-notes.en.md)
 
+## [Version 4.0.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v4.0.0) - 2022-11-11
+
+### Breaking Changed
+- 内部で利用しているWebRTCライブラリを更新し、動作の安定性を向上させました。
+  - `getStats()` メソッドを利用して取得できる統計情報の構造が一部変更されています。
+
+- v4.0.0よりも古いAndroid SDKを用いたアプリをGoogle Play Storeに公開している場合に、「脆弱性のあるWebRTCバージョン」というエラーメッセージが表示される事象が報告されております。
+  - 既知の脆弱性についてはv2.0.2にて対応しておりますが、出来る限り最新のSDKをご利用ください。
+  - このエラーメッセージは、Android SDKを今回リリースしたv4.0.0に更新していただくことで解消いたします。
+
 ## [Version 3.1.1](https://github.com/skyway/skyway-android-sdk/releases/tag/v3.1.1) - 2022-09-07
 
 ### Fixed
