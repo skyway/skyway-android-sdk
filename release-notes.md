@@ -2,6 +2,12 @@
 
 [English](./release-notes.en.md)
 
+## [Version 4.0.1](https://github.com/skyway/skyway-android-sdk/releases/tag/v4.0.1) - 2022-12-02
+
+### Fixed
+
+- `Canvas.ScalingEnum.ASPECT_FIT`が正常に動作しない不具合を修正しました。
+
 ## [Version 4.0.0](https://github.com/skyway/skyway-android-sdk/releases/tag/v4.0.0) - 2022-11-11
 
 ### Breaking Changed
