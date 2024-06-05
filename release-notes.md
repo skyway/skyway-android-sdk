@@ -2,6 +2,14 @@
 
 [English](./release-notes.en.md)
 
+## [Version 4.0.2](https://github.com/skyway/skyway-android-sdk/releases/tag/v4.0.2) - 2024-06-05
+
+### Changed
+
+- 新SkyWayと旧SkyWayを同一のアプリで動作可能にしました。
+  - ただし、同時利用は非対応となります。
+  - 新旧を切り替える場合は必ずSDKの終了処理（`Dispose`/`Destory`などの呼び出し、オブジェクトの解放）を行ってください。
+
 ## [Version 4.0.1](https://github.com/skyway/skyway-android-sdk/releases/tag/v4.0.1) - 2022-12-02
 
 ### Fixed
