@@ -2,6 +2,12 @@
 
 [English](./release-notes.en.md)
 
+## [Version 4.0.3](https://github.com/skyway/skyway-android-sdk/releases/tag/v4.0.3) - 2024-07-12
+
+### Fixed
+
+- proguardのルールを修正しました。
+
 ## [Version 4.0.2](https://github.com/skyway/skyway-android-sdk/releases/tag/v4.0.2) - 2024-06-05
 
 ### Changed
