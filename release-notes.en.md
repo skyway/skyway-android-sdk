@@ -1,6 +1,13 @@
-# SkyWay Android SDK release notes
+code# SkyWay Android SDK release notes
 
 [日本語](./release-notes.md)
+
+## [Version 4.0.4](https://github.com/skyway/skyway-android-sdk/releases/tag/v4.0.4) - 2025-08-13
+
+### Added
+
+- Support for 16 KB Page Size
+  - Added support for 64-bit architectures (arm64-v8a & x86_64)
 
 ## [Version 4.0.3](https://github.com/skyway/skyway-android-sdk/releases/tag/v4.0.3) - 2024-07-12
 
