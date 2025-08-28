@@ -2,6 +2,16 @@
 
 [English](./release-notes.en.md)
 
+## [Version 4.0.5](https://github.com/skyway/skyway-android-sdk/releases/tag/v4.0.5) - 2025-08-28
+
+### Added
+
+- 16KB Page Size に対応
+  - 64-bit アーキテクチャ(arm64v8a & x86_64) について対応しました
+
+### Fixed
+- v4.0.4が新SkyWayと同梱する場合ビルドエラーになる問題を修正しました
+
 ## [Version 4.0.4](https://github.com/skyway/skyway-android-sdk/releases/tag/v4.0.4) - 2025-08-13
 
 ### Added
